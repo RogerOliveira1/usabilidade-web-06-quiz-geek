@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Geek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz">
+    <h1 class="quiz__titulo">Quiz Geek</h1>
+
+    <!-- Tela das perguntas -->
+    <section id="tela-pergunta">
+      <p id="progresso" class="quiz__progresso">Pergunta 1 de 3</p>
+      <h2 id="pergunta" class="quiz__pergunta"></h2>
+      <div id="opcoes" class="opcoes"></div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <button id="btn-proxima" class="botao" type="button" hidden>Próxima pergunta</button>
+    </section>
+
+    <!-- Tela do resultado -->
+    <section id="tela-resultado" hidden>
+      <h2 class="resultado__titulo">Fim de jogo!</h2>
+      <p class="resultado__pontos">Você acertou <span id="pontuacao-final">0</span> de <span id="total">3</span></p>
+      <p id="resultado-mensagem" class="resultado__mensagem"></p>
+      <button id="btn-reiniciar" class="botao" type="button">Jogar de novo</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

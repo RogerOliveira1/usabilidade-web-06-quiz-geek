@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  font-family: "Nunito", sans-serif;
+  color: #1e1e2f;
+  background: #ffcc00;
+  background-image: radial-gradient(#e6b800 2px, transparent 2px);
+  background-size: 18px 18px;
+}
+
+.quiz {
+  width: 100%;
+  max-width: 560px;
+  padding: 28px 24px;
+  background: #fff;
+  border: 4px solid #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 10px 10px 0 #1e1e2f;
+}
+
+.quiz__titulo {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #e63946;
+  text-shadow: 3px 3px 0 #1e1e2f;
+  margin-bottom: 12px;
+}
+
+.quiz__progresso {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #6c6c80;
+  text-transform: uppercase;
+}
+
+.quiz__pergunta {
+  margin: 8px 0 20px;
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+.opcoes {
+  display: grid;
+  gap: 10px;
+}
+
+.opcao {
+  padding: 14px 16px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  background: #f1f1f6;
+  border: 3px solid #1e1e2f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+}
+
+.opcao:hover:not(:disabled) {
+  background: #dde7ff;
+  transform: translateX(4px);
+}
+
+.opcao:disabled {
+  cursor: default;
+}
+
+.opcao--certa {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.opcao--errada {
+  background: #e63946;
+  color: #fff;
+}
+
+.feedback {
+  min-height: 1.6em;
+  margin: 16px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.feedback--certo { color: #1e9e55; }
+.feedback--errado { color: #e63946; }
+
+.botao {
+  padding: 12px 24px;
+  font-family: "Bangers", cursive;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #3a86ff;
+  border: 3px solid #1e1e2f;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 #1e1e2f;
+  cursor: pointer;
+}
+
+.botao:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+#tela-resultado {
+  text-align: center;
+}
+
+.resultado__titulo {
+  font-family: "Bangers", cursive;
+  font-size: 2.2rem;
+}
+
+.resultado__pontos {
+  margin: 12px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.resultado__pontos span {
+  color: #e63946;
+}
+
+.resultado__mensagem {
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+}
